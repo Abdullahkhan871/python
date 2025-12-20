@@ -2,4 +2,13 @@ import pandas as pd
 
 df = pd.read_excel("data.xlsx")
 
-print(df)
+for index, row in df.iterrows():
+    name = row["name"]
+    password = row["password"]
+
+    print("Name:", name)
+    print("Password:", password)
+    print("-" * 20)
+
+
+print("Khatam")
